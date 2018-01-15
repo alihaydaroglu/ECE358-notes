@@ -17,7 +17,7 @@ In the master theorem, you need $$f(n)$$ to be larger than $$n^{\log_{b}(a)}$$ n
 
 ## Multiplication of Large Integers
 
-**Input**: two numbers in binary each has n bits. 
+**Input**: two numbers in binary each has n bits.
 
 | $$x$$  | $$X_1$$ | $$X_0$$ |
 | ---- | ----- | ----- |
@@ -39,7 +39,7 @@ def multiply (x,y): # arrays of size n
 		p2 = multiply(X1, Y0)
 		p3 = multiply(X0, Y1)
 		p4 = Multiply(X0, Y0)
-		
+
 		return 2^n * p1 + 2^(n/2) * p2 + 2^(n/2) * p3 + p4
 ```
 
@@ -69,7 +69,7 @@ $$T(n) = 3T(n/2)+\Theta(n)$$ and with master theorem we get $$T(n)=\Theta(n^{\lo
 
 ## Maximum Subarray Problem
 
-**Input**: an array ```A[1...n]``` 
+**Input**: an array ```A[1...n]```
 
 **Output**: indices i and j such that A[i...j] has the highest possible sum
 
@@ -77,7 +77,7 @@ You can solve this with divide and conquer:
 
 1. Divide array into ```A[low...mid]``` and ```A[mid+1...high]```
 2. Solve for two subarrays
-3. Find maximum subarray  that crosses the midpoint 
+3. Find maximum subarray  that crosses the midpoint
 4. Use the best solution of the three
 
-Check 
+Check

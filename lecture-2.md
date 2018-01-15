@@ -10,7 +10,7 @@ Do the problems that are handed out to review the O(n) stuff.
 
 Break up problem into smaller sub-problems, and solve them
 
-Complexity of 
+Complexity of
 $$
 n\log(n)
 $$
@@ -40,7 +40,7 @@ Inductive Hypothesis: T(n) = nlogn
 Goal: Show that T(2n) = 2nlogn(2n)
 ```
 
-Expanded version of induction method: 
+Expanded version of induction method:
 $$
 T(2n) = 2T(n) + 2n = 2n \log(n) + 2n = 2n(\log(2n)-1)+2n=2n\log(2n)
 $$
