@@ -10,23 +10,22 @@ $$
 T(n) = 2T(\frac{n}{2})+n\log(n)
 $$
 
-So, $a=2$, $b=2$, and $f(n)=n\log(n)$. So, compare $f(n)$ with $n^{\log_{2}(2)}=n$. Now, $f(n)$ is larger than the calculated function, which is $n$. However, there is no $\epsilon$ such that $n\log(n)=\Omega(n^{1+\epsilon})$. So it's neither Case 1 or Case 2!
+So, $$a=2$$, $$b=2$$, and $$f(n)=n\log(n)$$. So, compare $$f(n)$$ with $$n^{\log_{2}(2)}=n$$. Now, $$f(n)$$ is larger than the calculated function, which is $$n$$. However, there is no $$\epsilon$$ such that $$n\log(n)=\Omega(n^{1+\epsilon})$$. So it's neither Case 1 or Case 2!
 
-In the master theorem, you need $f(n)$ to be larger than $n^{\log_{b}(a)}$ not asymptotically, but polynomially, so you need to find an $\epsilon$ that satisfies the equation in the theorem. Some cases fall between Case 1 and 2, some fall between Case 2 and 3, and cannot be solved with this theorem
-
+In the master theorem, you need $$f(n)$$ to be larger than $$n^{\log_{b}(a)}$$ not asymptotically, but polynomially, so you need to find an $$\epsilon$$ that satisfies the equation in the theorem. Some cases fall between Case 1 and 2, some fall between Case 2 and 3, and cannot be solved with this theorem
 
 
 ## Multiplication of Large Integers
 
 **Input**: two numbers in binary each has n bits. 
 
-| $x$  | $X_1$ | $X_0$ |
+| $$x$$  | $$X_1$$ | $$X_0$$ |
 | ---- | ----- | ----- |
-| $y$  | $Y_1$ | $Y_0$ |
+| $$y$$  | $$Y_1$$ | $$Y_0$$ |
 
-Define $X_1 = x_{n-1}...x_{\frac{n}{2}}$ and $X_0=x_{\frac{n}{2}-1}...x_1x_0$, and define similarly for $Y_0$ and $Y_1$.
+Define $$X_1 = x_{n-1}...x_{\frac{n}{2}}$$ and $$X_0=x_{(\frac{n}{2}-1)}...x_1x_0$$, and define similarly for $$Y_0$$ and $$Y_1$$.
 
-So, $xy=2^nX_1Y_1 + 2^{\frac{n}{2}}X_1Y_0+2^{\frac{n}{2}}X_0Y_1+X_0Y_0$
+So, $$xy=2^nX_1Y_1 + 2^{\frac{n}{2}}X_1Y_0+2^{\frac{n}{2}}X_0Y_1+X_0Y_0$$
 
 So,
 
@@ -48,7 +47,7 @@ def multiply (x,y): # arrays of size n
 $$
 T(n) = 4T(\frac{n}{2})+\Theta(n)
 $$
-So, we have $T(n) = O(n^2)$.
+So, we have $$T(n) = O(n^2)$$.
 
 ### A Better Approach to Multiplication
 
@@ -56,7 +55,7 @@ $$
 xy=2^nX_1Y_1+X_0Y_0+2^{\frac{n}{2}}((X_1+X_0)(Y_1+Y_0)-X_1Y_1-X_0Y_0)
 $$
 
-This way we can reduce the number of sub-problems. Now we have three subproblems, with size $n/2+1$
+This way we can reduce the number of sub-problems. Now we have three subproblems, with size $$n/2+1$$
 
 ```python
 def multiply2 (x,y):
@@ -66,7 +65,7 @@ def multiply2 (x,y):
     return 2^n ....
 ```
 
-$T(n) = 3T(n/2)+\Theta(n)$ and with master theorem we get $T(n)=\Theta(n^{\log_2(3)})=\Theta(n^{1.58})$.
+$$T(n) = 3T(n/2)+\Theta(n)$$ and with master theorem we get $$T(n)=\Theta(n^{\log_2(3)})=\Theta(n^{1.58})$$.
 
 ## Maximum Subarray Problem
 
