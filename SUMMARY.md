@@ -1,4 +1,4 @@
-# Summary
+##Lectures
 
 * [Introduction](README.md)
 * [Lecture 1](lecture-1.md)
@@ -8,3 +8,6 @@
 * [Lecture 5](lecture-5.md)
 * [Greedy Algorithms](greedy.md)
 * [Minimum Spanning Tree - Greedy](min-span-tree.md)
+
+##Review Notes
+* [Quiz 1: Divide and Conquer](quiz1_review.md)
