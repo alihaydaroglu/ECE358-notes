@@ -6,8 +6,8 @@
 * [Lecture 3](lecture-3.md)
 * [Lecture 4](lecture-4.md)
 * [Lecture 5](lecture-5.md)
-* [Greedy Algorithms](greedy.md)
-* [Minimum Spanning Tree - Greedy](min-span-tree.md)
+* [Lecture 6 - Greedy Algorithms](greedy.md)
+* [Lecture 7 - Minimum Spanning Tree - Greedy](min-span-tree.md)
 
 ##Review Notes
-* [Quiz 1: Divide and Conquer](quiz1_review.md)
+* [Quiz 1 - Divide and Conquer](quiz1_review.md)
