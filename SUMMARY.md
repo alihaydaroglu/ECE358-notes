@@ -8,13 +8,8 @@
 * [Lecture 5](lecture-5.md)
 * [Lecture 6 - Greedy Algorithms](greedy.md)
 * [Lecture 7 - Minimum Spanning Tree - Greedy](min-span-tree.md)
+* [a](PS1.md)
 * [Lecture 8 - Graphs](graphs.md)
 
 ##Review Notes
 * [Quiz 1 - Divide and Conquer](quiz1_review.md)
-<<<<<<< HEAD
-* [a](PS1.md)
-=======
-
-[a](PS1.md)
->>>>>>> dd5278da22992725e6e642a7d9c4c1e27b359a12
