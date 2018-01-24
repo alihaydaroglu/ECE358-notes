@@ -18,7 +18,7 @@ $$
 $$
 
 
-Applying KVL on the left nodes we get:
+Apply KVL on the left nodes to get:
 
 
 $$
@@ -269,11 +269,11 @@ $$
 $$
 
 
-$$ \ \  
+$$  \  
 \begin{align}  
 0 &= \Bbb{det}\(s\mathbf I - \mathbf A\)   \  
-& = \Bbb{det}\begin{bmatrix} s - 4 & -2 \ -3 & s+1 \end{bmatrix} \  
-& = s^2 -4s +s -4 -6 \ & = s^2 -3s -10 \  
+& = \Bbb{det}\begin{bmatrix} s - 4 & -2  -3 & s+1 \end{bmatrix} \  
+& = s^2 -4s +s -4 -6  & = s^2 -3s -10 \  
 & = \(s+2\)\(s-5\)  
 \end{align} \tag{4.1}
 
@@ -293,8 +293,8 @@ This gives:
 $$
 
 
-v\_1 = \begin{bmatrix} 1 \ -3 \end{bmatrix},  
-v\_2 = \begin{bmatrix} 2 \ 1\end{bmatrix}  
+v\_1 = \begin{bmatrix} 1  -3 \end{bmatrix},  
+v\_2 = \begin{bmatrix} 2  1\end{bmatrix}  
 \tag{4.3}
 
 
@@ -317,9 +317,9 @@ Plugging in the initial condition, we can find $$\mathbf c$$.
 $$
 
 
-x\(0\) = \begin {bmatrix} 1 \ 1 \end {bmatrix}  
-= \begin {bmatrix} 1 & 2 \ -3 & 1 \end {bmatrix}  
-\begin {bmatrix} c\_1 \ c\_2 \end {bmatrix}  
+x\(0\) = \begin {bmatrix} 1  1 \end {bmatrix}  
+= \begin {bmatrix} 1 & 2  -3 & 1 \end {bmatrix}  
+\begin {bmatrix} c\_1  c\_2 \end {bmatrix}  
 \tag{4.5}
 
 
@@ -366,7 +366,7 @@ $$
 
 
 \begin {align}  
-x\_p\(t\) & =  \mathbf \Phi \(t\) \int\_0^t \mathbf \Phi ^{-1} \(t\) \mathbf B u\(s\)ds \ \  
+x\_p\(t\) & =  \mathbf \Phi \(t\) \int\_0^t \mathbf \Phi ^{-1} \(t\) \mathbf B u\(s\)ds  \  
 & =  
     \begin{bmatrix}  
         7e^{5t} & e^{-t}  
@@ -383,10 +383,10 @@ x\_p\(t\) & =  \mathbf \Phi \(t\) \int\_0^t \mathbf \Phi ^{-1} \(t\) \mathbf B u
     \end{bmatrix}  
     \right\)  
     \begin{bmatrix}  
-        0 \ 1  
+        0  1  
     \end{bmatrix}  
     ds  
-\ \  
+ \  
 & =  
     \frac 16  
     \begin{bmatrix}  
@@ -395,8 +395,8 @@ x\_p\(t\) & =  \mathbf \Phi \(t\) \int\_0^t \mathbf \Phi ^{-1} \(t\) \mathbf B u
     \end{bmatrix}  
     \int\_0^t  
     \begin{bmatrix}  
-        -e^{-5s} \ 7e^s  
-    \end{bmatrix} ds \ \  
+        -e^{-5s}  7e^s  
+    \end{bmatrix} ds  \  
 & =  
     \frac 16  
     \begin{bmatrix}  
@@ -404,14 +404,14 @@ x\_p\(t\) & =  \mathbf \Phi \(t\) \int\_0^t \mathbf \Phi ^{-1} \(t\) \mathbf B u
         e^{5t} & e^{-t}  
     \end{bmatrix}  
     \begin{bmatrix}  
-        \frac 15 e^{-5t} - 1 \ 7e^t - 1  
-    \end{bmatrix} \ \  
+        \frac 15 e^{-5t} - 1  7e^t - 1  
+    \end{bmatrix}  \  
 & =  
     \frac 16  
     \begin{bmatrix}  
         \frac 75 - 7e^{5t} + 7 -e^{-t} \  
         \frac 15 - e^{5t} + 7 - e^{-t}  
-    \end{bmatrix} \ \  
+    \end{bmatrix}  \  
 & =  
     \begin{bmatrix}  
         \frac {7}{5} - \frac{7e^{5t}}{6}-\frac{e^{-t}}{6} \  
@@ -427,8 +427,8 @@ $$
 
 
 \begin{align}  
-x\(t\) &= x\_h\(t\)+x\_p\(t\) \ \  
-& = \mathbf \Phi \(t\) \mathbf c + x\_p\(t\) \ \  
+x\(t\) &= x\_h\(t\)+x\_p\(t\)  \  
+& = \mathbf \Phi \(t\) \mathbf c + x\_p\(t\)  \  
 & =  
 \begin{bmatrix}  
     7e^{5t} & e^{-t}  
@@ -436,19 +436,19 @@ x\(t\) &= x\_h\(t\)+x\_p\(t\) \ \
     e^{5t} & e^{-t}  
 \end{bmatrix}  
 \begin{bmatrix}  
-    c\_1 \ c\_2  
+    c\_1  c\_2  
 \end{bmatrix} +  
 \frac 15  
 \begin{bmatrix}  
-    7 \ 6  
+    7  6  
 \end{bmatrix} -  
 \frac 16  
 \begin{bmatrix}  
-    7 \ 1  
+    7  1  
 \end{bmatrix}e^{5t} -  
 \frac 16  
 \begin {bmatrix}  
-    1 \ 1  
+    1  1  
 \end{bmatrix}  
  e^{-t}  
 \end{align} \tag{5.3}
@@ -461,12 +461,12 @@ $$
 
 \begin{align}  
 \begin {bmatrix}  
-    2 \ 1  
+    2  1  
 \end{bmatrix}  
 & =  
-\begin {bmatrix} 7 & 1 \ 1 & 1 \end{bmatrix}  
-\begin {bmatrix} c\_1 \ c\_2 \end{bmatrix} +  
-\begin {bmatrix} \frac 75 - \frac 76 - \frac 16 \ \frac 65 - \frac 16 - \frac 16 \end{bmatrix}  
+\begin {bmatrix} 7 & 1  1 & 1 \end{bmatrix}  
+\begin {bmatrix} c\_1  c\_2 \end{bmatrix} +  
+\begin {bmatrix} \frac 75 - \frac 76 - \frac 16  \frac 65 - \frac 16 - \frac 16 \end{bmatrix}  
 \end{align} \tag{5.4}
 
 
@@ -492,21 +492,22 @@ x\(t\) &=
     e^{5t} & e^{-t}  
 \end{bmatrix}  
 \begin{bmatrix}  
-    \frac {4}{15}\ \frac{1}{15}  
+    \frac {4}{15} \frac{1}{15}  
 \end{bmatrix} +  
 \frac 15  
 \begin{bmatrix}  
-    7 \ 6  
+    7  6  
 \end{bmatrix} -  
 \frac 16  
 \begin{bmatrix}  
-    7 \ 1  
+    7  1  
 \end{bmatrix}e^{5t} -  
 \frac 16  
 \begin {bmatrix}  
-    1 \ 1  
+    1  1  
 \end{bmatrix}  
  e^{-t}  
-\end{align} \tag{5.3}  
+\end{align} \tag{5.3}
+
 $$
 
