@@ -8,8 +8,8 @@ Figuring out the **complexity** of algorithms, e.g. the amount of **resources** 
 To compare functions, we use the concept of **asymptotic bounding**.  There are three notations we are going to be using, called Big-O, Theta and Omega. These are defined in the next three sections.
 
 It should also be noted that this analysis can be run for different cases:
-* **Best case**: Minimum complexity over *all* possible inputs
 * **Average Case**: Expected value considering probability distribution over all inputs
+* **Best case**: Minimum complexity over *all* possible inputs
 * **Worst case**: Maximum complexity over the entire sample space.
 
 ####1. Big-O
